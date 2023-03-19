@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/brown"
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Hello"
+            android:id="@+id/itemName">
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </View>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginRight="15dp"
+            android:id="@+id/viewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:backgroundTint="#DFB300"
+            app:cornerRadius="10dp"
+            android:textAllCaps="false">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+</LinearLayout>

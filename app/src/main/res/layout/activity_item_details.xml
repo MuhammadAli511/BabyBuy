@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ItemDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:id="@+id/back1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Details"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/baseline_image_24"
+                    android:id="@+id/itemImage"
+                    android:layout_gravity="center">
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/itemName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColorHint="#D4B300">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/itemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Price"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:textColorHint="#D4B300">
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/itemDelegate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Delegate Number"
+                android:inputType="text"
+                android:textColorHint="#D4B300">
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/itemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:background="@drawable/roundedrectangle"
+                android:hint="Description"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textColorHint="#D4B300">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/itemCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Mark item as purchased">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:paddingVertical="13dp"
+                app:backgroundTint="#DFB300"
+                app:cornerRadius="20dp"
+                android:text="Update Item"
+                android:id="@+id/updateItem"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:paddingVertical="13dp"
+                app:backgroundTint="#DFB300"
+                app:cornerRadius="20dp"
+                android:text="Delete Item"
+                android:id="@+id/deleteItem"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

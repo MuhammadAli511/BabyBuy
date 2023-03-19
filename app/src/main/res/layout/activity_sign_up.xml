@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/signin"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BabyBuy"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            android:textColor="@color/white">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedrectangle"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#D4B300">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedrectangle"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#D4B300">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedrectangle"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textColorHint="#D4B300">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedrectangle"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:textColorHint="#D4B300">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="13dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="#DFB300"
+            app:cornerRadius="20dp"
+            android:textAllCaps="false">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</LinearLayout>
